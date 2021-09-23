@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -16,162 +16,304 @@
     --green-color: #15A385;
 }
 
-.landing-page {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 50% 50%;
+.container {
+    max-width: 1260px;
+    padding: 0 6%;
+    margin: 0 auto;
 }
 
-.header {
-    position: absolute;
-    top: 52px;
-    left: 7.5%;
-}
-
-.landing-title {
-    color: var(--title-color);
-}
-
-.landing-item {
-    color: var(--text-color);
-}
-
-.landing-item > i {
-    color: var(--green-color);
-}
-
-.landing-description {
-    color: var(--text-color);
-}
-
-.landing-img {
-    background: url("/assets/img/HeroImage.jpg") center / cover no-repeat;
-}
-
-.landing-content {
-    padding: 0 15%;
+.header, .footer {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 42px 6%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-.landing-title {
-    font-size: 52px;
-    margin-bottom: 18px;
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.landing-list {
-    margin: 18px 0 8px 0;
+.header-left {
+    margin-left: 32px;
 }
 
-.landing-item {
-    margin-bottom: 12px;
-}
-
-.landing-btn {
-    display: inline-block;
-    padding: 16px;
+.btn {
+    padding: 12px 18px;
     color: white;
-    background-color: var(--title-color);
     font-size: 14px;
+    background-color: var(--title-color);
     border-radius: 4px;
 }
 
-.landing-partners {
-    margin-top: 18px;
+.nav-item, .btn-text {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.header-right > a:first-child {
+    margin-right: 18px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.search-content {
+    background-color: #F9F6F1;
+    padding: 42px 48px;
+    border-radius: 4px;
+}
+
+.search-title {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    max-width: 356px;
+}
+
+.search-description {
+    color: var(--text-color);
+    margin-bottom: 12px;
+    max-width: 356px;
+}
+
+.search-input-content {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    background-color: white;
+    border: 1px solid #adadad;
+    border-radius: 4px;
+    padding: 18px 20px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+}
+
+.fa-magnifying-glass {
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.search-input {
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.search-form {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.search-input:focus {
+    outline: 0;
+}
+
+.search-btn {
+    width: 96px;
+    border: 0;
+    background: var(--title-color);
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 18px 20px;
+    margin-bottom: 0;
+}
+
+.search-add {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.campgrounds {
+    margin-top: 32px;
+}
+
+.campgrounds-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 18px;
+}
+
+.campground-card {
+    border-radius: 4px;
+    border: 1px solid #d4d4d4;
+    padding: 12px;
+}
+
+.campground-title {
+    font-size: 16px;
+    margin-top: 8px;
+    color: var(--title-color);
+}
+
+.campground-description {
+    color: var(--text-color);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.campground-btn {
+    width: 100%;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    color: var(--title-color);
+    font-weight: 700;
+    background-color: transparent;
+    padding: 12px 18px;
+    margin-top: 12px;
+
+}
+
+.campground-img-ulap {
+    background-image: url("/assets/img/Mount Ulap.jpg");
+    height: 142px;
+    border-radius: 4px;
+}
+
+.campground-img-calaguas {
+    background-image: url("/assets/img/Calaguas Island.jpg");
+    height: 142px;
+    border-radius: 4px;
+}
+
+.campground-img-onay {
+    background-image: url("/assets/img/Onay Beach.jpg");
+    height: 142px;
+    border-radius: 4px;
+}
+
+.campground-img-seven-sisters {
+    background-image: url("/assets/img/Seven Sisters Waterfall.jpg");
+    height: 142px;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-        background-color: var(--primary-color);
-        padding: 24px 18px;
-        position: unset;
+
+    body {
+        overflow-x: hidden;
     }
 
-    .landing-page {
-        grid-template-rows: 40% 60%;
-        grid-template-columns: 100%;
+    .menu-toggle {
+        display: block;
     }
 
-    .landing-content {
-        grid-row: 2;
+    .header, .footer {
+        padding: 24px 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .hero-desktop {
-        display: none;
-    }
-
-    .landing-img {
-        background: url("/assets/img/HeroImage(TabletandMobile).jpg") center / cover no-repeat;
-    }
-
-    .landing-page {
-        height: calc(100vh - 78px);
-    }
-
-    .landing-content {
-        padding: 0 10%;
+    .header-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        padding-top: 85px;
+        background-color: white;
+        border-radius: 0 0 0 18px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transform: translateX(200%);
+        transition: all ease .4s;
     }
 
-    .landing-title {
-        font-size: 42px;
-        margin-bottom: 12px;
+    .open .header-nav {
+        transform: translateX(0%);
     }
 
-    .landing-list {
-        margin: 18px 0;
+    .header-left {
+        margin-left: 0;
     }
 
-    .landing-btn {
-        display: inline-block;
-        padding: 16px;
-        color: white;
-        background-color: var(--title-color);
-        font-size: 14px;
-        border-radius: 4px;
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .landing-partners {
-        margin-top: 24px;
-    }
-
-    .partner-text {
-        font-size: 14px;
+    .btn-text, .nav-item {
         color: var(--text-color);
     }
 
-    .partner-logo {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .header-right > a:first-child {
+        margin: 12px 0;
     }
 
-    .partner-img {
-        width: 108px;
+    .header-right > a:last-child {
+        margin-bottom: 24px;
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 4px;
+        background-color: #F9F6F1;
+        z-index: 10;
+    }
+
+    .fa-xmark {
+        display: none;
+    }
+
+    .open .fa-xmark {
+        display: block;
+    }
+
+    .open .fa-bars {
+        display: none;
+    }
+
+    .campgrounds-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 480px) {
 
-    .landing-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .search-content {
+        padding: 24px 28px;
     }
 
-    .landing-title {
-        font-size: 28px;
-        font-weight: 800;
+    .search-title {
+        font-size: 26px;
+        margin-bottom: 8px;
     }
 
-    .landing-description {
-        margin: 6px 0 12px 0;
+    .search-description {
+        color: var(--text-color);
+        margin-bottom: 12px;
     }
 
-    .partner-img {
-        width: 35%;
+    .search-form {
+        display: block;
+        margin-bottom:  0;
     }
+
+    .search-input-content {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .search-btn {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+
+    .campgrounds-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 }
