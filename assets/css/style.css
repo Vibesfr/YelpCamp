@@ -196,6 +196,123 @@
     border-radius: 4px;
 }
 
+/* Header login */
+
+.header-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.login-form {
+    margin-top: 72px;
+}
+
+.nav-login-item > a {
+    color: var(--text-color);
+}
+
+.fa-arrow-left {
+    margin-right: 4px;
+}
+
+.login-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.login-label {
+    color: var(--title-color);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.login-input {
+    border: 0;
+    background-color: var(--primary-color);
+    padding: 18px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.login-input:focus {
+    outline: 0;
+}
+
+.login-btn {
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: 0;
+    padding: 18px 24px;
+    color: white;
+    font-size: 14px;
+    background-color: var(--title-color);
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.login-description {
+    color: var(--text-color);
+}
+
+.login-description > a {
+    color: #21cede;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.login {
+    padding: 0 12%;
+}
+
+.container-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.testimonials {
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 82px;
+    color: var(--title-color);
+}
+
+.testimonials-text {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.testimonials-author {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.testimonials-content {
+    margin-left: 18px;
+}
+
+.testimonial-job {
+    margin-top: 4px;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+
 @media screen and (max-width: 768px) {
 
     body {
@@ -278,6 +395,19 @@
     .campgrounds-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .login-form {
+        margin-top: 32px;
+    }
+
+    .container-login {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60vh 40vh;
+    }
+
+    .testimonials {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -314,6 +444,48 @@
     .campgrounds-grid {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    /* Header login */
+    .header-login {
+        font-size: 14px;
+    }
+
+    .login-form {
+        margin-top: 0;
+    }
+
+    .container-login {
+        grid-template-columns: 1fr;
+        grid-template-rows: 75vh 25vh;
+    }
+
+    .testimonials {
+        padding: 24px 32px;
+    }
+
+    .testimonials-author {
+        margin-top: 12px;
+    }
+
+    .testimonials-text {
+        font-size: 16px;
+    }
+
+    .testimonials-img {
+        width: 36px;
+    }
+
+    .testimonial-name {
+        font-size: 14px;
+    }
+
+    .testimonial-job {
+        font-size: 12px;
+    }
+
+    .testimonials {
+        height: auto;
     }
 
 }
