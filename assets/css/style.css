@@ -54,6 +54,19 @@
     font-weight: 700;
 }
 
+.btn-text-alt {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.main-nav {
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 12px;
+}
+
 .header-right > a:first-child {
     margin-right: 18px;
 }
@@ -161,6 +174,8 @@
 }
 
 .campground-btn {
+    display: block;
+    text-align: center;
     width: 100%;
     border: 1px solid #d4d4d4;
     border-radius: 4px;
@@ -169,29 +184,10 @@
     background-color: transparent;
     padding: 12px 18px;
     margin-top: 12px;
-
 }
 
-.campground-img-ulap {
-    background-image: url("/assets/img/Mount Ulap.jpg");
-    height: 142px;
-    border-radius: 4px;
-}
-
-.campground-img-calaguas {
-    background-image: url("/assets/img/Calaguas Island.jpg");
-    height: 142px;
-    border-radius: 4px;
-}
-
-.campground-img-onay {
-    background-image: url("/assets/img/Onay Beach.jpg");
-    height: 142px;
-    border-radius: 4px;
-}
-
-.campground-img-seven-sisters {
-    background-image: url("/assets/img/Seven Sisters Waterfall.jpg");
+.campground-img {
+    width: 100%;
     height: 142px;
     border-radius: 4px;
 }
@@ -217,7 +213,7 @@
     margin-right: 4px;
 }
 
-.login-title {
+.input-title {
     font-size: 32px;
     margin-bottom: 24px;
 }
@@ -228,13 +224,13 @@
     margin-bottom: 12px;
 }
 
-.login-label {
+.input-label {
     color: var(--title-color);
     font-weight: 500;
     margin-bottom: 8px;
 }
 
-.login-input {
+.main-input {
     border: 0;
     background-color: var(--primary-color);
     padding: 18px 24px;
@@ -242,7 +238,7 @@
     font-weight: 500;
 }
 
-.login-input:focus {
+.main-input:focus {
     outline: 0;
 }
 
@@ -312,6 +308,123 @@
     font-size: 14px;
 }
 
+.new-camp {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.views {
+    display: grid;
+    grid-template-columns: 25% 65%;
+    grid-gap: 24px;
+
+}
+
+.maps {
+    padding: 32px;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    max-height: 336px;
+}
+
+.map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.view-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-campground, .view-comments {
+    padding: 32px;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+}
+
+.view-comments {
+    margin-top: 32px;
+}
+
+.view-campground-img {
+    width: 100%;
+    height: 286px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.view-campground-info, .comments-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.view-campground-title {
+    font-size: 20px;
+    color: var(--title-color);
+}
+
+.view-campground-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.view-campground-description {
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.view-campground-author {
+    color: var(--text-color);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.comments-author, .comments-date {
+    font-size: 14px;
+    color: var(--title-color);
+}
+
+.comments-description {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.comment-bar {
+    display: block;
+    border-bottom: 1px solid #d4d4d4;
+    height: 1px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.comments {
+    margin-bottom: 24px;
+}
+
+.comments-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-review {
+    border: 0;
+    padding: 18px 24px;
+    color: white;
+    font-size: 14px;
+    background-color: var(--title-color);
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.btn-review > i {
+    margin-right: 6px;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -408,6 +521,33 @@
     .testimonials {
         height: auto;
     }
+
+    .new-camp {
+        padding: 0 2%;
+    }
+
+    .views {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+    }
+
+    .view-content {
+        grid-row: 1;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav > li:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .nav-item {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -486,6 +626,10 @@
 
     .testimonials {
         height: auto;
+    }
+
+    .new-camp {
+        padding: 0 6%;
     }
 
 }

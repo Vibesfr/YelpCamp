@@ -156,6 +156,10 @@
 
 @media screen and (max-width: 480px) {
 
+    .landing-page {
+        grid-gap: 32px;
+    }
+
     .landing-content {
         display: flex;
         flex-direction: column;

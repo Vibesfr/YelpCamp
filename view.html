@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>View - YelpCamp</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/img/Logo.svg" alt="logo">
+        <div class="header-nav">
+            <div class="header-left">
+                <ul class="main-nav">
+                    <li><a class="nav-item" href="index.html">Home</a></li>
+                    <li><a class="nav-item" href="search.html">Search</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <a href="login.html" class="btn-text">Login</a>
+                <a href="register.html" class="btn">Create an account</a>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </header>
+    <div class="container">
+        <section class="views">
+            <div class="maps">
+                <img src="./assets/img/Map.png" alt="map" class="map-img">
+            </div>
+            <div class="view-content">
+                <div class="view-campground">
+                    <img src="./assets/img/Mount Ulap.jpg" alt="" class="view-campground-img">
+                    <div class="view-campground-info">
+                        <h1 class="view-campground-title">Mount Ulap</h1>
+                        <p class="view-campground-price">$ 104.99/night</p>
+                    </div>
+                    <p class="view-campground-description">Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Philippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.</p>
+                    <p class="view-campground-author">Submitted by Andrew Mike</p>
+                </div>
+                <div class="view-comments">
+                    <div class="comments">
+                        <div class="comments-info">
+                            <h1 class="comments-author">Adam Jones</h1>
+                            <p class="comments-date">13h ago</p>
+                        </div>
+                        <p class="comments-description">Honestly one of the best experiences ever, took us a while to figure out how to get there but it was amazing!</p>
+                        <span class="comment-bar"></span>
+                    </div>
+                    <div class="comments">
+                        <div class="comments-info">
+                            <h1 class="comments-author">Isaac Dylan</h1>
+                            <p class="comments-date">1 day ago</p>
+                        </div>
+                        <p class="comments-description">Traveling changes you as a person, you gain more perspective, this is the perfect spot to do that.</p>
+                        <span class="comment-bar"></span>
+                    </div>
+                    <div class="comments">
+                        <div class="comments-info">
+                            <h1 class="comments-author">Hudson Luca</h1>
+                            <p class="comments-date">3 days ago</p>
+                        </div>
+                        <p class="comments-description">Definitely recommend going there, not too far and not a lot of people to ruin the experience.</p>
+                        <span class="comment-bar"></span>
+                    </div>
+                    <div class="comments-buttons">
+                        <a href="new_comment.html" class="btn-review"><i class="fa-solid fa-comment-dots"></i> Leave a Review</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer"><img src="./assets/img/Logo.svg" alt=""></footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
