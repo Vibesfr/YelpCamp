@@ -45,7 +45,7 @@
 }
 
 .landing-img {
-    background: url("./assets/img/HeroImage.jpg") center / cover no-repeat;
+    background: url("../img/HeroImage.jpg") center / cover no-repeat;
 }
 
 .landing-content {
