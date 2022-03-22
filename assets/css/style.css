@@ -632,4 +632,8 @@
         padding: 0 6%;
     }
 
+    .campgrounds-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
