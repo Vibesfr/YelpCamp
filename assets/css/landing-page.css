@@ -102,7 +102,7 @@
     }
 
     .landing-img {
-        background: url("/assets/img/HeroImage(TabletandMobile).jpg") center / cover no-repeat;
+        background: url("../img/HeroImage(TabletandMobile).jpg") center / cover no-repeat;
     }
 
     .landing-page {
